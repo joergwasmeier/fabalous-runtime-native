@@ -1,0 +1,8 @@
+{
+  "name": "ReactNativeTS",
+  "dependencies": {},
+  "globalDependencies": {
+    "react": "registry:dt/react#0.14.0+20161203201537",
+    "react-native": "registry:dt/react-native#0.34.0+20161025173646"
+  }
+}
