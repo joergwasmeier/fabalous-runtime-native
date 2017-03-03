@@ -4,20 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "rm -rf typings",
-    "postinstall": "node node_modules/typings/dist/bin.js install",
+    "postversion": "npm run build && git push && git push --tags && npm publish",
+    "build": "gulp clean && tsc && gulp copy_src_to_lib && gulp remove_src_folder && gulp remove_node_modules_folder && gulp replace",
+    "install": "shx cp -Rf ./lib/* ./ && shx rm -r ./lib",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
-    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "prebuild": "rm -rf build",
-    "build": "tsc"
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@fabalous/core": "*",
+    "@types/react": "*",
+    "@types/react-native": "*",
     "react": "^15.4.2",
-    "react-native": "^0.42.0"
+    "react-native": "^0.42.0",
+    "react-addons-shallow-compare": "^15.4.2",
+    "react-native-parallax-scroll-view": "^0.19.0",
+    "react-native-splash-screen": "^2.0.0",
+    "react-native-tab-view": "0.0.56"
   },
   "devDependencies": {
     "babel-jest": "^18.0.0",
@@ -26,6 +31,6 @@
     "react-test-renderer": "^15.4.2",
     "tslint": "^4.3.1",
     "typescript": "^2.2.0",
-    "typings": "^2.1.0"
+    "shx": "^0.2.2"
   }
 }
