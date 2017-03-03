@@ -17,7 +17,6 @@
     "@fabalous/core": "*",
     "@types/react": "*",
     "@types/react-native": "*",
-    "gulp-replace": "^0.5.4",
     "react": "^15.4.2",
     "react-addons-shallow-compare": "^15.4.2",
     "react-native": "^0.42.0",
