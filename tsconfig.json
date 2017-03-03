@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "target": "es2015",
-        "module": "es2015",
-        "jsx": "react",
-        "outDir": "dist/native/",
+        "target": "es6",
+        "module": "commonjs",
+        "jsx": "react-native",
+        "outDir": "lib",
         "rootDir": "src",
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
@@ -16,7 +16,10 @@
     "exclude": [
         "index.android.js",
         "index.ios.js",
-        "dist",
-        "node_modules"
+        "gulpfile.js",
+        "lib",
+        "config",
+        "node_modules",
+        "node_modules/@types/nodet"
     ]
 }
