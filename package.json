@@ -1,6 +1,6 @@
 {
   "name": "@fabalous/runtime-native",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "install": "shx cp -Rf ./lib/* ./ && shx rm -r ./lib"
-
   },
   "author": "",
   "license": "ISC",
