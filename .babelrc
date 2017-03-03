@@ -1,7 +1,7 @@
 {
   "presets": ["react-native"],
   "plugins": [["minify-replace", {
-    "identifierName": "CLIENT",
+    "identifierName": "NATIVE",
     "replacement": {
       "type": "booleanLiteral",
       "value": true

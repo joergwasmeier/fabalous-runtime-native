@@ -1,5 +1,4 @@
-import A_Native from "./build/A_Native";
-CLIENT = true;
-SERVER = false;
+import A_Native from "./dist/native/A_Native";
+
 
 new A_Native();
